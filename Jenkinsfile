@@ -8,7 +8,4 @@ node (BK && DEV) {
         stage('testresults') {
             junit 'gameoflife-web/sureire-reports/*.xml'
         }
-        stage('archive') {
-            archiveArtifacts artifacts: 'gameolife-web/target/*.war', followSymlinks: false
-        }
 }
